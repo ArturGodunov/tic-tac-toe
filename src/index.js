@@ -1,4 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 
-ReactDOM.render(<div><h1>qwe</h1></div>, document.getElementById('root'));
+import Routes, { routes } from './routes';
+
+ReactDOM.render(
+    <BrowserRouter>
+        <Switch>
+            {routes.map((route, i) => <Routes key={i} {...route} />)}
+        </Switch>
+    </BrowserRouter>,
+    document.getElementById('root')
+);
