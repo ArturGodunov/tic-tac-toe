@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Switch } from 'react-router-dom';
+// import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import Button from '@material-ui/core/Button';
 
 import Routes from '../routes';
 
@@ -9,6 +11,7 @@ class Template extends Component {
             <div>
                 <header>
                     <h1>TicTacTuring</h1>
+                    <Button color="primary" variant='contained'>test button</Button>
                 </header>
                 <main>
                     <Switch>
